@@ -1,0 +1,153 @@
+canvas {
+    background: #030303;
+    background-image: linear-gradient(#000000, rgb(47, 47, 47));
+    background-attachment: scroll;
+}  
+
+
+  nav{
+    display: flex;
+    position: absolute;
+    right: 60px;
+  }
+
+  .nav-links{
+    display: flex;
+  }
+  
+  .nav-links li{
+    list-style: none;
+  }
+  
+  .nav-links a{
+    color: rgb(215, 215, 215);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+  }
+  
+  .burger{
+    display: none;
+  }
+  
+  
+  
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(215, 215, 215);
+    margin: 5px;
+  }
+
+  
+#grad1 {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, white);
+  }
+
+.head{
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.472);
+    
+    width:100%
+}
+
+h1{
+    
+   
+    font-weight: bold;
+}
+h2{
+    
+}
+
+.slide{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 40px;
+    padding: 20px;
+    -webkit-animation-name:zoomout;
+	-webkit-animation-duration:0.4s;
+  transition: 0.8s;
+}
+
+.slide:hover{
+  background-color: rgba(0,0,0,0.7);
+  transform: scale(1.04);
+  -webkit-animation-name: zoomin;
+  -webkit-animation-duration:0.8s;
+
+}
+
+
+@-webkit-keyframes zoomin {
+  from{transform: scale(1);}
+  to{transform: scale(1.04);}
+
+}
+@-webkit-keyframes zoomout {
+  from{transform: scale(1.04);}
+  to{transform:scale(1);}
+}
+
+.slide_2{
+  position: absolute;
+  top: 150px;
+  right:40px;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 40px;
+  padding: 20px;
+  -webkit-animation-name:zoomout;
+-webkit-animation-duration:0.4s;
+transition: 0.8s;
+}
+
+.slide_2:hover{
+background-color: rgba(0,0,0,0.7);
+transform: scale(1.04);
+-webkit-animation-name: zoomin;
+-webkit-animation-duration:0.8s;
+
+}
+
+
+@-webkit-keyframes zoomin {
+from{transform: scale(1);}
+to{transform: scale(1.04);}
+
+}
+@-webkit-keyframes zoomout {
+from{transform: scale(1.04);}
+to{transform:scale(1);}
+}
+
+.gradient-t{
+    font-size: 50px;
+    background: linear-gradient(60deg, #E21143, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+   
+  }
+  .fixed-content {
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.font{
+  padding: 10px;
+  display: flex;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 33vw;
+  color: rgba(255,255,255);
+  opacity: 1;
+}
